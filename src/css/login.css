@@ -1,0 +1,150 @@
+/* Reset general */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f9;
+}
+
+main {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+header .header__logo img {
+    width: 50px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.section__form h1 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    font-size: 0.9em;
+    color: #555;
+    text-align: left;
+    margin-bottom: 5px;
+    margin-top: 15px;
+}
+
+form input[type="email"],
+form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+form span {
+    display: block;
+    font-size: 0.9em;
+    color: #777;
+    margin: 10px 0;
+    text-align: right;
+}
+
+.section__line {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+}
+
+.section__line span {
+    flex: 1;
+    font-size: 0.9em;
+    color: #777;
+    position: relative;
+}
+
+.section__line span:before,
+.section__line span:after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background-color: #ddd;
+    margin: 0 10px;
+    position: relative;
+    top: 0.3em;
+}
+
+.section__social a {
+    margin: 0 10px;
+}
+
+.section__social img {
+    width: 30px;
+    height: auto;
+    transition: transform 0.2s ease;
+}
+
+.section__social img:hover {
+    transform: scale(1.1);
+}
+
+footer p {
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 20px;
+}
+
+footer p b {
+    color: #4CAF50;
+    cursor: pointer;
+}
+
+/* Adaptabilidad para dispositivos móviles */
+@media (max-width: 768px) {
+    main {
+        padding: 20px;
+        margin: 0 10px;
+        border-radius: 5px;
+    }
+
+    .section__form h1 {
+        font-size: 1.6em;
+    }
+
+    .section__social a {
+        margin: 0 8px;
+    }
+
+    .section__social img {
+        width: 25px;
+    }
+}

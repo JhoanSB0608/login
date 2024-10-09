@@ -1,0 +1,20 @@
+:root{
+    --green: #27ae60;
+    --black: #333;
+    --white: #fff;
+    --bg-color: #eee;
+    --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    --border: .1rem solid var(--black);
+}
+@font-face {
+    font-family: "Inter_18pt-Regular";
+    src: url(../storage/font/Inter/Inter_18pt-Regular.ttf);
+}
+@font-face {
+    font-family: "Inter_18pt-Bold";
+    src: url(../storage/font/Inter/Inter_18pt-Bold.ttf);
+}
+@font-face {
+    font-family: "Inter_18pt-SemiBold";
+    src: url(../storage/font/Inter/Inter_18pt-SemiBold.ttf);
+}
